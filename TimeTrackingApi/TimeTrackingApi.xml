@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TimeTrackingApi</name>
+    </assembly>
+    <members>
+        <member name="M:TimeTrackingApi.Controllers.ProjectsController.GetProjectlist(System.String)">
+            <summary>
+            Returns to all projects list 
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeTrackingApi.Controllers.ProjectsController.Get(System.String)">
+            <summary>
+            Returns to a project information by projectId
+            </summary>
+            <param name="projectId">Project unique identificator</param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeTrackingApi.Controllers.ProjectsController.Post(System.String,TimeTrackingApi._0.Models.Project)">
+            <summary>
+            Create a new project
+            </summary>
+            <param name="userId"></param>
+            <param name="projectInfo">Project information</param>
+            <returns></returns>
+             [HttpPost]
+        </member>
+        <member name="M:TimeTrackingApi.Controllers.TasksController.Get(System.String,System.String)">
+            <summary>
+            Returns to tasks list for the user in the project
+            </summary>
+            <param name="userId"></param>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeTrackingApi.Controllers.TasksController.GetTask(System.String,System.String,System.String)">
+            <summary>
+            Returns to a specific task information
+            </summary>
+            <param name="userId"></param>
+            <param name="projectId"></param>
+            <param name="taskId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeTrackingApi.Controllers.TasksController.Post(System.String,System.String,TimeTrackingApi._0.Models.Task)">
+            <summary>
+            Create a new task in the selected project
+            </summary>
+            <param name="userId"></param>
+            <param name="projectId"></param>
+            <param name="taskInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeTrackingApi.Controllers.TasksController.Put(System.String,System.String,System.String)">
+            <summary>
+            Update task status to inProgress
+            </summary>
+            <param name="userId"></param>
+            <param name="projectId"></param>
+            <param name="taskId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeTrackingApi.Controllers.TasksController.CloseTask(System.String,System.String,System.String)">
+            <summary>
+             Update task status to closed
+            </summary>
+            <param name="userId"></param>
+            <param name="projectId"></param>
+            <param name="taskId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeTrackingApi.Controllers.TasksController.RegistrySpentTime(System.String,System.String,System.String,TimeTrackingApi._0.Models.SpentTimeRegistry)">
+            <summary>
+            Save time record for the task 
+            </summary>
+            <param name="userId"></param>
+            <param name="projectId"></param>
+            <param name="taskId"></param>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeTrackingApi.Controllers.UsersController.Get">
+            <summary>
+            Returns user list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TimeTrackingApi.Controllers.UsersController.Get(System.String)">
+            <summary>
+            Returns user information by userId
+            </summary>
+            <param name="userId">is user value</param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeTrackingApi.Controllers.UsersController.GetByUserName(System.String)">
+            <summary>
+            Returns user information by userName
+            </summary>
+            <param name="userName">user name value</param>
+            <returns></returns>        
+        </member>
+        <member name="M:TimeTrackingApi.Controllers.UsersController.Post(TimeTrackingApi._0.Models.User)">
+            <summary>
+            Create a new user
+            </summary>
+            <param name="userInfo">user information</param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeTrackingApi.Controllers.UsersController.Put(System.String,TimeTrackingApi._0.Models.User)">
+            <summary>
+            Update a selected user information
+            </summary>
+            <param name="userId">user id</param>
+            <param name="userInfo">user information</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
